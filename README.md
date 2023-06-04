@@ -22,7 +22,7 @@ File structure of this project is as below:
 ├── images               # Store EDA results 
 │   ├── eda
 │   └── results
-├── logs				 # Store logs
+├── logs                 # Store logs
 ├── models               # Store models
 ├── sequencediagram.jpeg # has sequence of function calls in shurn_library.py file
 ├── requirements.txt     # python packages required to run this application in docker image.
