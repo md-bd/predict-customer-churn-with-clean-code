@@ -1,0 +1,55 @@
+[churn_script_logging_and_tests.py:33 -          test_import() ] Testing import_data: SUCCESS
+[churn_script_logging_and_tests.py:59 -             test_eda() ] Testing perform_eda: cached df found: 
+[churn_script_logging_and_tests.py:61 -             test_eda() ] dataframe: 
+    Unnamed: 0  CLIENTNUM     Attrition_Flag  Customer_Age Gender  Dependent_count Education_Level Marital_Status Income_Category Card_Category  Months_on_book  Total_Relationship_Count  Months_Inactive_12_mon  Contacts_Count_12_mon  Credit_Limit  Total_Revolving_Bal  Avg_Open_To_Buy  Total_Amt_Chng_Q4_Q1  Total_Trans_Amt  Total_Trans_Ct  Total_Ct_Chng_Q4_Q1  Avg_Utilization_Ratio  Churn
+0           0  768805383  Existing Customer            45      M                3     High School        Married     $60K - $80K          Blue              39                         5                       1                      3       12691.0                  777          11914.0                 1.335             1144              42                1.625                  0.061      0
+1           1  818770008  Existing Customer            49      F                5        Graduate         Single  Less than $40K          Blue              44                         6                       1                      2        8256.0                  864           7392.0                 1.541             1291              33                3.714                  0.105      0
+2           2  713982108  Existing Customer            51      M                3        Graduate        Married    $80K - $120K          Blue              36                         4                       1                      0        3418.0                    0           3418.0                 2.594             1887              20                2.333                  0.000      0
+3           3  769911858  Existing Customer            40      F                4     High School        Unknown  Less than $40K          Blue              34                         3                       4                      1        3313.0                 2517            796.0                 1.405             1171              20                2.333                  0.760      0
+4           4  709106358  Existing Customer            40      M                3      Uneducated        Married     $60K - $80K          Blue              21                         5                       1                      0        4716.0                    0           4716.0                 2.175              816              28                2.500                  0.000      0
+[churn_script_logging_and_tests.py:70 -             test_eda() ] Testing perform_eda: start
+[churn_script_logging_and_tests.py:72 -             test_eda() ] Testing perform_eda: running the function and saving in temp folder: images/temp
+[churn_script_logging_and_tests.py:82 -             test_eda() ] generated files: ['churn_distribution.png', 'customer_age_distribution.png', 'heatmap.png', 'marital_status_distribution.png', 'total_transaction_distribution.png']
+[churn_script_logging_and_tests.py:83 -             test_eda() ] expected files: ['churn_distribution.png', 'marital_status_distribution.png', 'customer_age_distribution.png', 'total_transaction_distribution.png', 'heatmap.png']
+[churn_script_logging_and_tests.py:88 -             test_eda() ] Testing perform_eda: all the eda images are created.
+[churn_script_logging_and_tests.py:91 -             test_eda() ] Testing perform_eda: cleanup eda images starts
+[churn_script_logging_and_tests.py:99 -             test_eda() ] Deleting file:images/temp/churn_distribution.png
+[churn_script_logging_and_tests.py:99 -             test_eda() ] Deleting file:images/temp/customer_age_distribution.png
+[churn_script_logging_and_tests.py:99 -             test_eda() ] Deleting file:images/temp/heatmap.png
+[churn_script_logging_and_tests.py:99 -             test_eda() ] Deleting file:images/temp/marital_status_distribution.png
+[churn_script_logging_and_tests.py:99 -             test_eda() ] Deleting file:images/temp/total_transaction_distribution.png
+[churn_script_logging_and_tests.py:101 -             test_eda() ] Testing perform_eda: cleanup eda images ends
+[churn_script_logging_and_tests.py:110 -             test_eda() ] Testing perform_eda: SUCCESS
+[churn_script_logging_and_tests.py:122 -  test_encoder_helper() ] Testing encoder_helper: cached df found: 
+[churn_script_logging_and_tests.py:124 -  test_encoder_helper() ] df: 
+    Unnamed: 0  CLIENTNUM     Attrition_Flag  Customer_Age Gender  Dependent_count Education_Level Marital_Status Income_Category Card_Category  Months_on_book  Total_Relationship_Count  Months_Inactive_12_mon  Contacts_Count_12_mon  Credit_Limit  Total_Revolving_Bal  Avg_Open_To_Buy  Total_Amt_Chng_Q4_Q1  Total_Trans_Amt  Total_Trans_Ct  Total_Ct_Chng_Q4_Q1  Avg_Utilization_Ratio  Churn
+0           0  768805383  Existing Customer            45      M                3     High School        Married     $60K - $80K          Blue              39                         5                       1                      3       12691.0                  777          11914.0                 1.335             1144              42                1.625                  0.061      0
+1           1  818770008  Existing Customer            49      F                5        Graduate         Single  Less than $40K          Blue              44                         6                       1                      2        8256.0                  864           7392.0                 1.541             1291              33                3.714                  0.105      0
+2           2  713982108  Existing Customer            51      M                3        Graduate        Married    $80K - $120K          Blue              36                         4                       1                      0        3418.0                    0           3418.0                 2.594             1887              20                2.333                  0.000      0
+3           3  769911858  Existing Customer            40      F                4     High School        Unknown  Less than $40K          Blue              34                         3                       4                      1        3313.0                 2517            796.0                 1.405             1171              20                2.333                  0.760      0
+4           4  709106358  Existing Customer            40      M                3      Uneducated        Married     $60K - $80K          Blue              21                         5                       1                      0        4716.0                    0           4716.0                 2.175              816              28                2.500                  0.000      0
+[churn_script_logging_and_tests.py:131 -  test_encoder_helper() ] Testing encoder_helper: start
+[churn_script_logging_and_tests.py:172 -  test_encoder_helper() ] Testing encoder_helper: SUCCESS
+[churn_script_logging_and_tests.py:186 - test_perform_feature_engineering() ] Testing perform_feature_engineering: cached df found: 
+[churn_script_logging_and_tests.py:188 - test_perform_feature_engineering() ] df: 
+    Unnamed: 0  CLIENTNUM     Attrition_Flag  Customer_Age Gender  Dependent_count Education_Level Marital_Status Income_Category Card_Category  Months_on_book  Total_Relationship_Count  Months_Inactive_12_mon  Contacts_Count_12_mon  Credit_Limit  Total_Revolving_Bal  Avg_Open_To_Buy  Total_Amt_Chng_Q4_Q1  Total_Trans_Amt  Total_Trans_Ct  Total_Ct_Chng_Q4_Q1  Avg_Utilization_Ratio  Churn
+0           0  768805383  Existing Customer            45      M                3     High School        Married     $60K - $80K          Blue              39                         5                       1                      3       12691.0                  777          11914.0                 1.335             1144              42                1.625                  0.061      0
+1           1  818770008  Existing Customer            49      F                5        Graduate         Single  Less than $40K          Blue              44                         6                       1                      2        8256.0                  864           7392.0                 1.541             1291              33                3.714                  0.105      0
+2           2  713982108  Existing Customer            51      M                3        Graduate        Married    $80K - $120K          Blue              36                         4                       1                      0        3418.0                    0           3418.0                 2.594             1887              20                2.333                  0.000      0
+3           3  769911858  Existing Customer            40      F                4     High School        Unknown  Less than $40K          Blue              34                         3                       4                      1        3313.0                 2517            796.0                 1.405             1171              20                2.333                  0.760      0
+4           4  709106358  Existing Customer            40      M                3      Uneducated        Married     $60K - $80K          Blue              21                         5                       1                      0        4716.0                    0           4716.0                 2.175              816              28                2.500                  0.000      0
+[churn_script_logging_and_tests.py:197 - test_perform_feature_engineering() ] Testing perform_feature_engineering: start
+[churn_script_logging_and_tests.py:223 - test_perform_feature_engineering() ] y_train: 
+ 415     0
+3749    0
+9295    0
+8290    0
+7672    1
+[churn_script_logging_and_tests.py:224 - test_perform_feature_engineering() ] y_train type: <class 'pandas.core.series.Series'>
+[churn_script_logging_and_tests.py:225 - test_perform_feature_engineering() ] y_test: 
+ 3781    0
+2922    0
+5070    0
+7246    0
+623     0
+[churn_script_logging_and_tests.py:227 - test_perform_feature_engineering() ] Testing perform_feature_engineering: SUCCESS
